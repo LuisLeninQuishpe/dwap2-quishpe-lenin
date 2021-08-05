@@ -1,0 +1,178 @@
+h2{
+    font-family: 'Courgette', cursive;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Encabezado{
+    height: 90vh;
+    background-image: url("https://www.65ymas.com/uploads/s1/29/71/42/5-libros-imprescindibles-con-barcelona-como-telo-n-de-fondo.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+.Encabezado>ul> li>h4{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    color: #2fbb6e;
+}
+li>h2{
+    font-family: 'Source Code Pro', monospace;
+    color:rgb(34, 32, 32);
+    font-size: 3em;
+    text-align: center;
+}
+button{
+    padding: 1em 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(77, 228, 102) ;
+    border: 5px rgb(79, 177, 67) ;
+    border-style: double;
+    background-clip: padding-box; /* support: IE9+ */
+    transition: transform 0.25s,box-shadow 0.25s;
+}
+button:hover{
+    color: #72efdd;
+    box-shadow: 0 0.5em 0.5em -0.15em #feeafa ;
+    transform: translateY(-0.3em);
+}
+
+.Descripcion, .Productos{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.Descripcion>img{
+    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 70%;
+    height: 70%;
+    border: 0.3em solid darkblue;
+    border-radius: 4%;
+}
+.Descripcion>article{
+    margin: 4%;
+    margin-left: 5%;
+    width: 70%;
+    text-align: justify;
+}
+header>h2{
+    font-size: 2.2em;
+    color: #093038;
+}
+header>h1{
+    font-size: 2.5em;
+}
+
+.Productos{
+    background-color: #cdec19;
+    color: white;
+}
+.Productos>article{
+    margin: 4%;
+    margin-left: 15%;
+}
+p{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5em;
+}
+.Productos>ul{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li>p{
+    width: 90%;
+}
+li>img{
+    width: 230px;
+    height: 230px;
+    flex-grow: 1;
+}
+#precio{
+    color: #105664;
+}
+#articulo{
+    font-size: 1.5em;
+}
+aside>ul>li>p{
+    text-align: left;
+    font-size: 1em;
+}
+
+footer{
+    padding: 0.5%;
+    background-color: #d85555;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.8em;
+    text-align: center;
+}
+#frase{
+    color: #48cae4;
+    font-family: 'Courgette', cursive;
+}
+@media (max-width: 880px){
+    .Descripcion>img{
+        margin: 5%;
+        width: 85%;
+        height: 85%;
+    } 
+    header>h1{
+        font-size: 1.5em;
+    }  
+    p{
+        font-size: 1.2em;
+    }
+    li>h2{
+        font-size: 2.6em;
+    }
+}
+@media (max-width: 650px){
+    .Productos{
+        display: flex;
+        flex-direction: column;
+    }
+    .Descripcion{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Descripcion>article{
+        padding:0 5%;
+    }
+    li>h2{
+        font-size: 2.2em;
+    }
+    li>img{
+        width: 80%;
+        height: auto;
+        flex-grow: 1;
+    }
+}
+@media (max-width: 415px){
+    li>h2{
+        font-size: 1.8em;
+    }
+    
+    .Encabezado>ul> li>h4{
+        font-size: 0.8em;
+    }
+    button{
+        padding: 1em 2em;
+        font-size: 0.5em;
+    }
+}
